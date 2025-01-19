@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* React Transition Group */
+.select-box-body-enter {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  .select-box-body-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 200ms, transform 200ms;
+  }
+  
+  .select-box-body-exit {
+    opacity: 1;
+  }
+  
+  .select-box-body-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 200ms, transform 200ms;
+  }
+
+  * {
+    transition: background 0.2s, border 0.2s;
+  }
+  
+  li {
+    transition: color 0.15s;
+  }
+  
